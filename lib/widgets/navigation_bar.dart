@@ -6,8 +6,8 @@ class CustomNavigationBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
-          items: [BottomNavigationBarItem(icon: Icon(Icons.search), label: 'search'),
-                  BottomNavigationBarItem(icon: Icon(Icons.home), label: 'home'),
+          items: [BottomNavigationBarItem(icon: Icon(Icons.home), label: 'home'),
+                  BottomNavigationBarItem(icon: Icon(Icons.search), label: 'search'),
                   BottomNavigationBarItem(icon: Icon(Icons.face), label: 'profile'),
                   ]
     );
