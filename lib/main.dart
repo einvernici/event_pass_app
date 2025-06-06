@@ -1,8 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/pages/home_page.dart';
+import 'package:flutter_application_1/provider/bookmarked_events_provider.dart';
+import 'package:flutter_application_1/provider/event_provider.dart';
+import 'package:provider/provider.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+    MultiProvider(providers: [
+      ChangeNotifierProvider(create: (context) => EventProvider()),
+      ChangeNotifierProvider(create: (context) => BookmarkedEventosProvider())
+    ],
+    child: const MyApp()));
 }
 
 class MyApp extends StatelessWidget {

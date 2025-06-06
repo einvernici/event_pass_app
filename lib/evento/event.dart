@@ -1,26 +1,35 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/evento/event_detail_page.dart';
+import 'package:flutter_application_1/provider/bookmarked_events_provider.dart';
+import 'package:flutter_application_1/provider/event_provider.dart';
 import 'package:flutter_application_1/widgets/navigation_bar.dart';
+import 'package:provider/provider.dart';
 
-class Evento extends StatelessWidget {
+class Evento {
    const Evento({
-    super.key,  
+    required this.id,
     required this.title,
     required this.description, 
     required this.startTime, 
     required this.startDate,
     required this.location});
 
+  final String id;
   final String title;
   final String description;
   final String startTime;
   final String startDate;
   final String location;
 
- 
+}
+
+class EventoTile extends StatelessWidget {
+  final Evento event;
+  
+  const EventoTile({super.key, required this.event});
+
  @override
-  Widget build(BuildContext context)
-   {
+  Widget build(BuildContext context){
     return Padding(
       padding: const EdgeInsets.only(bottom: 8.0),
       child: Row(
@@ -33,7 +42,7 @@ class Evento extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   Text(
-                    title,
+                    event.title,
                     maxLines: 2,
                     overflow: TextOverflow.ellipsis,
                     style: const TextStyle(fontSize: 18,fontWeight: FontWeight.bold),
@@ -41,17 +50,15 @@ class Evento extends StatelessWidget {
                   const Padding(padding: EdgeInsets.only(bottom: 2.0)),
                   Expanded(
                     child: Text(
-                      description,
+                      event.description,
                       maxLines: 2,
                       overflow: TextOverflow.ellipsis,
                       style: const TextStyle(fontSize: 12.0, color: Colors.black54),
                     ),
                   ),
-                  Text(
-                    '$startDate - $startTime',
-                    style: const TextStyle(fontSize: 12.0, color: Colors.black87),
-                  ),
-                  Text(location, style: const TextStyle(fontSize: 12.0, color: Colors.black54)),
+                  Text(event.startDate,style: const TextStyle(fontSize: 12.0, color: Colors.black87),),
+                  Text(event.startTime, style: const TextStyle(fontSize: 12.0, color: Colors.black87),),
+                  Text(event.location, style: const TextStyle(fontSize: 12.0, color: Colors.black54),),
                 ],
               ),
             ),
@@ -61,82 +68,55 @@ class Evento extends StatelessWidget {
     );
   }
 }
-
+ 
 
 class FeedEventos extends StatefulWidget {
   const FeedEventos({super.key});
 
   @override
-  State<FeedEventos> createState() => _FeedEventos();
+  State<FeedEventos> createState() => _FeedEventosState();
 }
 
-class _FeedEventos extends State<FeedEventos> {
-  final List<Evento> listaBookmarked = []; //lista de eventos salvos pelo usuário
+class _FeedEventosState extends State<FeedEventos> {
+  final List<Evento> _listaBookmarked = [];
 
-  @override
+    @override
   Widget build(BuildContext context) {
+  var eventProvider = Provider.of<EventProvider>(context);
+  var eventos = eventProvider.listaEventos;
+  var bookmarkedEventsProvider = Provider.of<BookmarkedEventosProvider>(context);
+
     return Scaffold(
       appBar: AppBar(title: const Text('Feed de Eventos')),
       body: ListView.builder(
-        itemCount: listaEventos.length,
+        itemCount: eventos.length,
         itemBuilder: (context, index) {
-          final isBookmarked = listaBookmarked.contains(listaEventos[index]);
+          Evento evento = eventos[index];
+          final isBookmarked = _listaBookmarked.contains(eventos[index]);
           return ListTile(
             onTap: () {
               Navigator.push(
               context,
               MaterialPageRoute(
                 builder: (context) =>
-                    EventDetailPage(evento: listaEventos[index])));
+                    EventDetailPage(evento: eventos[index])));
             },
-            title: Evento(
-              title: listaEventos[index].title, 
-              description: listaEventos[index].description, 
-              startTime: listaEventos[index].startTime, 
-              startDate: listaEventos[index].startDate, 
-              location: listaEventos[index].location,
-            ),
+            title: EventoTile(event: evento),
             trailing: IconButton(
-          onPressed: (){
-            setState(() {
-              if (isBookmarked){
-                listaBookmarked.remove(listaEventos[index]);
-              }
-              else{
-                listaBookmarked.add(listaEventos[index]);
-              }});
-            },
-          icon: isBookmarked
-          ? const Icon(Icons.bookmark) : const Icon(Icons.bookmark_border_outlined),
-          ),
-          );
+              onPressed: (){
+                setState((){
+                  if (isBookmarked) {
+                  _listaBookmarked.remove(eventos[index]);
+                  bookmarkedEventsProvider.removeBookmarkedList(evento);}
+                  else {
+                    _listaBookmarked.add(eventos[index]);
+                    bookmarkedEventsProvider.addToBookmarkedList(evento);}
+              });},
+              icon: isBookmarked ? Icon(Icons.bookmark_outlined) : Icon(Icons.bookmark_border),),);
         },
       ),
       bottomNavigationBar: CustomNavigationBar(),
     );
   }
 }
-
-List<Evento> listaEventos = [
-  Evento( title: 'Evento 1',
-          description: 'Festa de inauguração da Empresa X.',
-          startDate: '28 de Setembro',
-          startTime: '16:00h',
-          location: 'Rua Carlos Gomes, 761'),
-  Evento( title: 'Evento 2',
-          description: 'Hip-hop hits 2000 - artista 1, artista 2, artista 3, artista 4, artista 5.',
-          startDate: '16 de Setembro',
-          startTime: '22:00h',
-          location: 'Casa NTX'),
-  Evento( title: 'Evento 3',
-          description: 'Tributo Miles Davis',
-          startDate: '8 de Setembro',
-          startTime: '21:00h',
-          location: 'Ocidente'),  
-  Evento( title: 'Evento 4',
-          description: 'Tributo Miles Davis',
-          startDate: '8 de Setembro',
-          startTime: '21:00h',
-          location: 'Ocidente'),                
-];
 

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/user/user.dart';
 
 class CustomNavigationBar extends StatelessWidget {
   const CustomNavigationBar ({super.key});
@@ -8,7 +9,9 @@ class CustomNavigationBar extends StatelessWidget {
     return BottomNavigationBar(
           items: [BottomNavigationBarItem(icon: Icon(Icons.home), label: 'home'),
                   BottomNavigationBarItem(icon: Icon(Icons.search), label: 'search'),
-                  BottomNavigationBarItem(icon: Icon(Icons.face), label: 'profile'),
+                  BottomNavigationBarItem(icon: IconButton(
+                    onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => User()));}, 
+                    icon: Icon(Icons.face)), label: 'profile'),
                   ]
     );
   }
