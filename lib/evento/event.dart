@@ -78,13 +78,14 @@ class FeedEventos extends StatefulWidget {
 }
 
 class _FeedEventosState extends State<FeedEventos> {
-  final List<Evento> _listaBookmarked = [];
-
-    @override
+  
+  @override
   Widget build(BuildContext context) {
-  var eventProvider = Provider.of<EventProvider>(context);
-  var eventos = eventProvider.listaEventos;
-  var bookmarkedEventsProvider = Provider.of<BookmarkedEventosProvider>(context);
+    var eventProvider = Provider.of<EventProvider>(context);
+    var eventos = eventProvider.listaEventos;
+
+
+    var bookmarkedEventsProvider = Provider.of<BookmarkedEventosProvider>(context);
 
     return Scaffold(
       appBar: AppBar(title: const Text('Feed de Eventos')),
@@ -92,30 +93,35 @@ class _FeedEventosState extends State<FeedEventos> {
         itemCount: eventos.length,
         itemBuilder: (context, index) {
           Evento evento = eventos[index];
-          final isBookmarked = _listaBookmarked.contains(eventos[index]);
+
+          final isBookmarked = bookmarkedEventsProvider.bookmarkedEvents.contains(evento);
+
           return ListTile(
             onTap: () {
               Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) =>
-                    EventDetailPage(evento: eventos[index])));
+                context,
+                MaterialPageRoute(
+                  builder: (context) => EventDetailPage(evento: eventos[index]),
+                ),
+              );
             },
             title: EventoTile(event: evento),
             trailing: IconButton(
-              onPressed: (){
-                setState((){
-                  if (isBookmarked) {
-                  _listaBookmarked.remove(eventos[index]);
-                  bookmarkedEventsProvider.removeBookmarkedList(evento);}
-                  else {
-                    _listaBookmarked.add(eventos[index]);
-                    bookmarkedEventsProvider.addToBookmarkedList(evento);}
-              });},
-              icon: isBookmarked ? Icon(Icons.bookmark_outlined) : Icon(Icons.bookmark_border),),);
+              onPressed: () {
+              
+                if (isBookmarked) {
+                  bookmarkedEventsProvider.removeBookmarkedList(evento);
+                } else {
+                  bookmarkedEventsProvider.addToBookmarkedList(evento);
+                }
+              },
+              icon: Icon(isBookmarked ? Icons.bookmark : Icons.bookmark_border),
+              color: isBookmarked ? Colors.blue : Colors.grey, 
+            ),
+          );
         },
       ),
-      bottomNavigationBar: CustomNavigationBar(),
+      bottomNavigationBar: const CustomNavigationBar(),
     );
   }
 }

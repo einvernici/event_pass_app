@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/pages/home_page.dart';
 import 'package:flutter_application_1/provider/bookmarked_events_provider.dart';
 import 'package:flutter_application_1/provider/event_provider.dart';
 import 'package:provider/provider.dart';
-
+import 'package:flutter_application_1/pages/auth_screen.dart';
 void main() {
   runApp(
     MultiProvider(providers: [
@@ -18,6 +17,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return HomePage();
+    return const MaterialApp( 
+      title: 'Event Pass App', 
+      home: AuthScreen(), 
+    );
   }
 }
