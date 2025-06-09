@@ -1,0 +1,508 @@
+Downloading https://services.gradle.org/distributions/gradle-8.4-all.zip
+...................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+Unzipping /Users/vitorlautert/.gradle/wrapper/dists/gradle-8.4-all/56r6xik2f6skrm47et0ibifug/gradle-8.4-all.zip to /Users/vitorlautert/.gradle/wrapper/dists/gradle-8.4-all/56r6xik2f6skrm47et0ibifug
+Set executable permissions for: /Users/vitorlautert/.gradle/wrapper/dists/gradle-8.4-all/56r6xik2f6skrm47et0ibifug/gradle-8.4/bin/gradle
+Initialized native services in: /Users/vitorlautert/.gradle/native
+Initialized jansi services in: /Users/vitorlautert/.gradle/native
+
+Welcome to Gradle 8.4!
+
+Here are the highlights of this release:
+ - Compiling and testing with Java 21
+ - Faster Java compilation on Windows
+ - Role focused dependency configurations creation
+
+For more details see https://docs.gradle.org/8.4/release-notes.html
+
+Received JVM installation metadata from '/Applications/Android Studio.app/Contents/jbr/Contents/Home': {JAVA_HOME=/Applications/Android Studio.app/Contents/jbr/Contents/Home, JAVA_VERSION=21.0.6, JAVA_VENDOR=JetBrains s.r.o., RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=21.0.6+-13368085-b895.109, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=21.0.6+-13368085-b895.109, VM_VENDOR=JetBrains s.r.o., OS_ARCH=aarch64}
+Removing 0 daemon stop events from registry
+Starting a Gradle Daemon (subsequent builds will be faster)
+Starting process 'Gradle build daemon'. Working directory: /Users/vitorlautert/.gradle/daemon/8.4 Command: /Applications/Android Studio.app/Contents/jbr/Contents/Home/bin/java -XX:MaxMetaspaceSize=4G -XX:ReservedCodeCacheSize=512m -XX:+HeapDumpOnOutOfMemoryError --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.prefs/java.util.prefs=ALL-UNNAMED --add-opens=java.base/java.nio.charset=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED -Xmx8G -Dfile.encoding=UTF-8 -Duser.country=BR -Duser.language=pt -Duser.variant -cp /Users/vitorlautert/.gradle/wrapper/dists/gradle-8.4-all/56r6xik2f6skrm47et0ibifug/gradle-8.4/lib/gradle-launcher-8.4.jar -javaagent:/Users/vitorlautert/.gradle/wrapper/dists/gradle-8.4-all/56r6xik2f6skrm47et0ibifug/gradle-8.4/lib/agents/gradle-instrumentation-agent-8.4.jar org.gradle.launcher.daemon.bootstrap.GradleDaemon 8.4
+Successfully started process 'Gradle build daemon'
+An attempt to start the daemon took 0.904 secs.
+The client will now receive all logging from the daemon (pid: 21474). The daemon log file: /Users/vitorlautert/.gradle/daemon/8.4/daemon-21474.out.log
+Starting build in new daemon [memory: 8 GiB]
+Using 8 worker leases.
+Received JVM installation metadata from '/Applications/Android Studio.app/Contents/jbr/Contents/Home': {JAVA_HOME=/Applications/Android Studio.app/Contents/jbr/Contents/Home, JAVA_VERSION=21.0.6, JAVA_VENDOR=JetBrains s.r.o., RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=21.0.6+-13368085-b895.109, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=21.0.6+-13368085-b895.109, VM_VENDOR=JetBrains s.r.o., OS_ARCH=aarch64}
+Watching the file system is configured to be enabled if available
+Now considering [/Users/vitorlautert/Downloads/event_pass_app-main/android] as hierarchies to watch
+File system watching is active
+Starting Build
+Generating /Users/vitorlautert/.gradle/caches/8.4/generated-gradle-jars/gradle-api-8.4.jar
+Cannot use Kotlin build script compile avoidance with /Users/vitorlautert/.gradle/caches/8.4/generated-gradle-jars/gradle-api-8.4.jar: class org/gradle/configurationcache/extensions/AutoCloseableExtensionsKt: inline fun useToRun(): compile avoidance is not supported with public inline functions
+Cannot use Kotlin build script compile avoidance with /Users/vitorlautert/.gradle/caches/8.4/generated-gradle-jars/gradle-kotlin-dsl-extensions-8.4.jar: class org/gradle/kotlin/dsl/GradleApiKotlinDslExtensions0Kt: inline fun environment(): compile avoidance is not supported with public inline functions
+Cannot use Kotlin build script compile avoidance with /Users/vitorlautert/.gradle/wrapper/dists/gradle-8.4-all/56r6xik2f6skrm47et0ibifug/gradle-8.4/lib/gradle-kotlin-dsl-8.4.jar: class org/gradle/kotlin/dsl/ArtifactHandlerScope: inline fun invoke(): compile avoidance is not supported with public inline functions
+Kotlin DSL script compilation (Settings/TopLevel/stage1) is not up-to-date because:
+  No history is available.
+Now considering [/Users/vitorlautert/src/flutter/packages/flutter_tools/gradle, /Users/vitorlautert/Downloads/event_pass_app-main/android] as hierarchies to watch
+Kotlin DSL script compilation (Settings/TopLevel/stage1) is not up-to-date because:
+  No history is available.
+
+> Configure project :gradle
+Evaluating project ':gradle' using build file '/Users/vitorlautert/src/flutter/packages/flutter_tools/gradle/build.gradle.kts'.
+Caching disabled for Kotlin DSL plugin specs accessors for classpath 'b9688cd06edd31b5bac45f0f5c2423b0' because:
+  Build cache is disabled
+Kotlin DSL plugin specs accessors for classpath 'b9688cd06edd31b5bac45f0f5c2423b0' is not up-to-date because:
+  No history is available.
+Caching disabled for Kotlin DSL script compilation (Project/TopLevel/stage1) because:
+  Build cache is disabled
+Kotlin DSL script compilation (Project/TopLevel/stage1) is not up-to-date because:
+  No history is available.
+Downloading https://plugins.gradle.org/m2/org/gradle/kotlin/kotlin-dsl/org.gradle.kotlin.kotlin-dsl.gradle.plugin/4.1.2/org.gradle.kotlin.kotlin-dsl.gradle.plugin-4.1.2.pom to /Users/vitorlautert/.gradle/.tmp/gradle_download1719188083058376147bin
+Resource missing. [HTTP HEAD: https://plugins.gradle.org/m2/org/gradle/kotlin/kotlin-dsl/org.gradle.kotlin.kotlin-dsl.gradle.plugin/4.1.2/org.gradle.kotlin.kotlin-dsl.gradle.plugin-4.1.2.jar]
+Downloading https://plugins.gradle.org/m2/org/gradle/kotlin/gradle-kotlin-dsl-plugins/4.1.2/gradle-kotlin-dsl-plugins-4.1.2.pom to /Users/vitorlautert/.gradle/.tmp/gradle_download10973262063168630700bin
+Downloading https://plugins.gradle.org/m2/org/gradle/kotlin/gradle-kotlin-dsl-plugins/4.1.2/gradle-kotlin-dsl-plugins-4.1.2.module to /Users/vitorlautert/.gradle/.tmp/gradle_download4015705095525026689bin
+Downloading https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-sam-with-receiver/1.9.10/kotlin-sam-with-receiver-1.9.10.pom to /Users/vitorlautert/.gradle/.tmp/gradle_download16948598375581224473bin
+Downloading https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-gradle-plugins-bom/1.9.10/kotlin-gradle-plugins-bom-1.9.10.pom to /Users/vitorlautert/.gradle/.tmp/gradle_download10805731515805047531bin
+Downloading https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-assignment/1.9.10/kotlin-assignment-1.9.10.pom to /Users/vitorlautert/.gradle/.tmp/gradle_download9394708966648222386bin
+Downloading https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-gradle-plugins-bom/1.9.10/kotlin-gradle-plugins-bom-1.9.10.module to /Users/vitorlautert/.gradle/.tmp/gradle_download1568623707947151767bin
+Downloading https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-assignment/1.9.10/kotlin-assignment-1.9.10.module to /Users/vitorlautert/.gradle/.tmp/gradle_download5686742292108420261bin
+Downloading https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-sam-with-receiver/1.9.10/kotlin-sam-with-receiver-1.9.10.module to /Users/vitorlautert/.gradle/.tmp/gradle_download15622683845668594042bin
+Downloading https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-stdlib/1.9.10/kotlin-stdlib-1.9.10.pom to /Users/vitorlautert/.gradle/.tmp/gradle_download4573859865253052476bin
+Downloading https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-klib-commonizer-api/1.9.20/kotlin-klib-commonizer-api-1.9.20.pom to /Users/vitorlautert/.gradle/.tmp/gradle_download6810819762311555943bin
+Downloading https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-gradle-plugin-idea-proto/1.9.20/kotlin-gradle-plugin-idea-proto-1.9.20.pom to /Users/vitorlautert/.gradle/.tmp/gradle_download7168137092668694670bin
+Downloading https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-gradle-plugin-api/1.9.20/kotlin-gradle-plugin-api-1.9.20.pom to /Users/vitorlautert/.gradle/.tmp/gradle_download687278156824516766bin
+Downloading https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-android-extensions/1.9.20/kotlin-android-extensions-1.9.20.pom to /Users/vitorlautert/.gradle/.tmp/gradle_download7158903774754802071bin
+Downloading https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-gradle-plugin-model/1.9.20/kotlin-gradle-plugin-model-1.9.20.pom to /Users/vitorlautert/.gradle/.tmp/gradle_download6816181661512502356bin
+Downloading https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-gradle-plugin-api/1.9.20/kotlin-gradle-plugin-api-1.9.20.module to /Users/vitorlautert/.gradle/.tmp/gradle_download874034039800734624bin
+Downloading https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-compiler-embeddable/1.9.20/kotlin-compiler-embeddable-1.9.20.pom to /Users/vitorlautert/.gradle/.tmp/gradle_download6379630513162664058bin
+Downloading https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-util-klib/1.9.20/kotlin-util-klib-1.9.20.pom to /Users/vitorlautert/.gradle/.tmp/gradle_download5403661684476384376bin
+Downloading https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-scripting-compiler-embeddable/1.9.20/kotlin-scripting-compiler-embeddable-1.9.20.pom to /Users/vitorlautert/.gradle/.tmp/gradle_download9801024003299206812bin
+Downloading https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-scripting-compiler-impl-embeddable/1.9.20/kotlin-scripting-compiler-impl-embeddable-1.9.20.pom to /Users/vitorlautert/.gradle/.tmp/gradle_download12962311745561960439bin
+Downloading https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-gradle-plugin-idea/1.9.20/kotlin-gradle-plugin-idea-1.9.20.pom to /Users/vitorlautert/.gradle/.tmp/gradle_download3621706248315139317bin
+Downloading https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-compiler-runner/1.9.20/kotlin-compiler-runner-1.9.20.pom to /Users/vitorlautert/.gradle/.tmp/gradle_download6246496938992759056bin
+Downloading https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-gradle-plugin-idea/1.9.20/kotlin-gradle-plugin-idea-1.9.20.module to /Users/vitorlautert/.gradle/.tmp/gradle_download9004945130510087822bin
+Downloading https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-build-tools-api/1.9.20/kotlin-build-tools-api-1.9.20.pom to /Users/vitorlautert/.gradle/.tmp/gradle_download11271729982126436099bin
+Downloading https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-gradle-plugin-model/1.9.20/kotlin-gradle-plugin-model-1.9.20.module to /Users/vitorlautert/.gradle/.tmp/gradle_download8367608817088663044bin
+Downloading https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-stdlib-common/1.9.10/kotlin-stdlib-common-1.9.10.pom to /Users/vitorlautert/.gradle/.tmp/gradle_download4713985327972237701bin
+Downloading https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-sam-with-receiver/1.9.20/kotlin-sam-with-receiver-1.9.20.pom to /Users/vitorlautert/.gradle/.tmp/gradle_download134386244626029944bin
+Downloading https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-sam-with-receiver/1.9.20/kotlin-sam-with-receiver-1.9.20.module to /Users/vitorlautert/.gradle/.tmp/gradle_download5920348979626504220bin
+Downloading https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-assignment/1.9.20/kotlin-assignment-1.9.20.pom to /Users/vitorlautert/.gradle/.tmp/gradle_download15884389206497229827bin
+Downloading https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-assignment/1.9.20/kotlin-assignment-1.9.20.module to /Users/vitorlautert/.gradle/.tmp/gradle_download8786603003617930314bin
+Downloading https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-project-model/1.9.20/kotlin-project-model-1.9.20.pom to /Users/vitorlautert/.gradle/.tmp/gradle_download2306067554753897299bin
+Downloading https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-gradle-plugin-annotations/1.9.20/kotlin-gradle-plugin-annotations-1.9.20.pom to /Users/vitorlautert/.gradle/.tmp/gradle_download3296165618816075018bin
+Downloading https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-tooling-core/1.9.20/kotlin-tooling-core-1.9.20.pom to /Users/vitorlautert/.gradle/.tmp/gradle_download7737923618171338856bin
+Downloading https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-native-utils/1.9.20/kotlin-native-utils-1.9.20.pom to /Users/vitorlautert/.gradle/.tmp/gradle_download14636390289637547374bin
+Downloading https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-util-io/1.9.20/kotlin-util-io-1.9.20.pom to /Users/vitorlautert/.gradle/.tmp/gradle_download12435890199861719964bin
+Downloading https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-daemon-embeddable/1.9.20/kotlin-daemon-embeddable-1.9.20.pom to /Users/vitorlautert/.gradle/.tmp/gradle_download9605841151446794080bin
+Downloading https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-daemon-client/1.9.20/kotlin-daemon-client-1.9.20.pom to /Users/vitorlautert/.gradle/.tmp/gradle_download4385433814041550891bin
+Downloading https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-scripting-jvm/1.9.20/kotlin-scripting-jvm-1.9.20.pom to /Users/vitorlautert/.gradle/.tmp/gradle_download1706591593691168652bin
+Downloading https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-scripting-common/1.9.20/kotlin-scripting-common-1.9.20.pom to /Users/vitorlautert/.gradle/.tmp/gradle_download10570137321021298155bin
+Downloading https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-gradle-plugin-model/1.9.20/kotlin-gradle-plugin-model-1.9.20.jar to /Users/vitorlautert/.gradle/.tmp/gradle_download5671209825410913576bin
+Downloading https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-gradle-plugin-api/1.9.20/kotlin-gradle-plugin-api-1.9.20.jar to /Users/vitorlautert/.gradle/.tmp/gradle_download4724017755315292487bin
+Downloading https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-gradle-plugin-api/1.9.20/kotlin-gradle-plugin-api-1.9.20-gradle81.jar to /Users/vitorlautert/.gradle/.tmp/gradle_download17975482258828894406bin
+Downloading https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-stdlib/1.9.10/kotlin-stdlib-1.9.10.jar to /Users/vitorlautert/.gradle/.tmp/gradle_download10209837932292546681bin
+Downloading https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-stdlib-common/1.9.10/kotlin-stdlib-common-1.9.10.jar to /Users/vitorlautert/.gradle/.tmp/gradle_download12299801805952716591bin
+Downloading https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-assignment/1.9.20/kotlin-assignment-1.9.20-gradle81.jar to /Users/vitorlautert/.gradle/.tmp/gradle_download5351781161296109238bin
+Downloading https://plugins.gradle.org/m2/org/gradle/kotlin/gradle-kotlin-dsl-plugins/4.1.2/gradle-kotlin-dsl-plugins-4.1.2.jar to /Users/vitorlautert/.gradle/.tmp/gradle_download5396463532895113321bin
+Downloading https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-sam-with-receiver/1.9.20/kotlin-sam-with-receiver-1.9.20-gradle81.jar to /Users/vitorlautert/.gradle/.tmp/gradle_download13950075355693510369bin
+Downloading https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-gradle-plugin-idea/1.9.20/kotlin-gradle-plugin-idea-1.9.20.jar to /Users/vitorlautert/.gradle/.tmp/gradle_download7204987038564805177bin
+Downloading https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-gradle-plugin-idea-proto/1.9.20/kotlin-gradle-plugin-idea-proto-1.9.20.jar to /Users/vitorlautert/.gradle/.tmp/gradle_download10113597894795361898bin
+Downloading https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-native-utils/1.9.20/kotlin-native-utils-1.9.20.jar to /Users/vitorlautert/.gradle/.tmp/gradle_download15477874640682893797bin
+Downloading https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-klib-commonizer-api/1.9.20/kotlin-klib-commonizer-api-1.9.20.jar to /Users/vitorlautert/.gradle/.tmp/gradle_download827436996185294611bin
+Downloading https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-build-tools-api/1.9.20/kotlin-build-tools-api-1.9.20.jar to /Users/vitorlautert/.gradle/.tmp/gradle_download9736897641427778008bin
+Downloading https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-compiler-runner/1.9.20/kotlin-compiler-runner-1.9.20.jar to /Users/vitorlautert/.gradle/.tmp/gradle_download5814229645965911511bin
+Downloading https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-android-extensions/1.9.20/kotlin-android-extensions-1.9.20.jar to /Users/vitorlautert/.gradle/.tmp/gradle_download8011941135596350606bin
+Downloading https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-util-klib/1.9.20/kotlin-util-klib-1.9.20.jar to /Users/vitorlautert/.gradle/.tmp/gradle_download2106268418300232673bin
+Downloading https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-gradle-plugin-annotations/1.9.20/kotlin-gradle-plugin-annotations-1.9.20.jar to /Users/vitorlautert/.gradle/.tmp/gradle_download13114136663129940162bin
+Downloading https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-compiler-embeddable/1.9.20/kotlin-compiler-embeddable-1.9.20.jar to /Users/vitorlautert/.gradle/.tmp/gradle_download10980004037174155874bin
+Downloading https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-scripting-compiler-impl-embeddable/1.9.20/kotlin-scripting-compiler-impl-embeddable-1.9.20.jar to /Users/vitorlautert/.gradle/.tmp/gradle_download18419863299932507097bin
+Downloading https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-scripting-compiler-embeddable/1.9.20/kotlin-scripting-compiler-embeddable-1.9.20.jar to /Users/vitorlautert/.gradle/.tmp/gradle_download18214386181194672383bin
+Downloading https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-gradle-plugin/1.9.20/kotlin-gradle-plugin-1.9.20-gradle81.jar to /Users/vitorlautert/.gradle/.tmp/gradle_download14036825933799416104bin
+Downloading https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-tooling-core/1.9.20/kotlin-tooling-core-1.9.20.jar to /Users/vitorlautert/.gradle/.tmp/gradle_download10807424295124721039bin
+Downloading https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-daemon-client/1.9.20/kotlin-daemon-client-1.9.20.jar to /Users/vitorlautert/.gradle/.tmp/gradle_download236059101520564078bin
+Downloading https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-project-model/1.9.20/kotlin-project-model-1.9.20.jar to /Users/vitorlautert/.gradle/.tmp/gradle_download16862347137891683439bin
+Downloading https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-util-io/1.9.20/kotlin-util-io-1.9.20.jar to /Users/vitorlautert/.gradle/.tmp/gradle_download8063792776595619380bin
+Downloading https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-daemon-embeddable/1.9.20/kotlin-daemon-embeddable-1.9.20.jar to /Users/vitorlautert/.gradle/.tmp/gradle_download9955433805666606093bin
+Downloading https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-scripting-jvm/1.9.20/kotlin-scripting-jvm-1.9.20.jar to /Users/vitorlautert/.gradle/.tmp/gradle_download10138368316377724357bin
+Downloading https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-scripting-common/1.9.20/kotlin-scripting-common-1.9.20.jar to /Users/vitorlautert/.gradle/.tmp/gradle_download7765677263329282167bin
+Using Kotlin Gradle Plugin gradle81 variant
+kotlin scripting plugin: created the scripting discovery configuration: kotlinScriptDef
+kotlin scripting plugin: created the scripting discovery configuration: testKotlinScriptDef
+WARNING: Unsupported Kotlin plugin version.
+The `embedded-kotlin` and `kotlin-dsl` plugins rely on features of Kotlin `1.9.10` that might work differently than in the requested version `1.9.20`.
+file or directory '/Users/vitorlautert/src/flutter/packages/flutter_tools/gradle/src/main/java', not found
+Caching disabled for Kotlin DSL accessors for project ':gradle' because:
+  Build cache is disabled
+Kotlin DSL accessors for project ':gradle' is not up-to-date because:
+  No history is available.
+Cannot use Kotlin build script compile avoidance with /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin/1.9.20/d67c5ea81ba3098bf02a3feff06c378740af2bc3/kotlin-gradle-plugin-1.9.20-gradle81.jar: class org/jetbrains/kotlin/gradle/internal/KaptWithAndroid: inline fun androidVariantData(): compile avoidance is not supported with public inline functions
+Cannot use Kotlin build script compile avoidance with /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-idea-proto/1.9.20/c35d575cec4f2e5759fd63df8a3207653bae9ade/kotlin-gradle-plugin-idea-proto-1.9.20.jar: class org/jetbrains/kotlin/gradle/idea/proto/generated/IdeaExtrasProtoKt$Dsl: inline fun setValues(): compile avoidance is not supported with public inline functions
+Cannot use Kotlin build script compile avoidance with /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-idea/1.9.20/83cf5d4acdbf6c1e7b32ca96cb79b96e4cce032e/kotlin-gradle-plugin-idea-1.9.20.jar: class org/jetbrains/kotlin/gradle/idea/serialize/IdeaKotlinExtrasSerializer$Companion: inline fun javaIoSerializable(): compile avoidance is not supported with public inline functions
+Cannot use Kotlin build script compile avoidance with /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/1.9.20/b44d2f7d8c1c67c0ed66d40e57e52623ca753db7/kotlin-compiler-embeddable-1.9.20.jar: class org/jetbrains/kotlin/konan/file/FileKt: inline fun use(): compile avoidance is not supported with public inline functions
+Cannot use Kotlin build script compile avoidance with /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-tooling-core/1.9.20/bdc01105250e7ecc8bbcf49a21805685cd557dda/kotlin-tooling-core-1.9.20.jar: class org/jetbrains/kotlin/tooling/core/ClosureKt: inline fun closure(): compile avoidance is not supported with public inline functions
+Cannot use Kotlin build script compile avoidance with /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-util-io/1.9.20/13fa0df6f8e5aea3ee927e6299063d4a159766ca/kotlin-util-io-1.9.20.jar: class org/jetbrains/kotlin/konan/file/FileKt: inline fun use(): compile avoidance is not supported with public inline functions
+Cannot use Kotlin build script compile avoidance with /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core-jvm/1.5.0/d8cebccdcddd029022aa8646a5a953ff88b13ac8/kotlinx-coroutines-core-jvm-1.5.0.jar: class kotlinx/coroutines/CoroutineScopeKt: inline fun currentCoroutineContext(): compile avoidance is not supported with public inline functions
+Caching disabled for Kotlin DSL script compilation (Project/TopLevel/stage2) because:
+  Build cache is disabled
+Kotlin DSL script compilation (Project/TopLevel/stage2) is not up-to-date because:
+  No history is available.
+Resolve mutations for :gradle:checkKotlinGradlePluginConfigurationErrors (Thread[#88,Execution worker,5,main]) started.
+:gradle:checkKotlinGradlePluginConfigurationErrors (Thread[#88,Execution worker,5,main]) started.
+
+> Task :gradle:checkKotlinGradlePluginConfigurationErrors
+Caching disabled for task ':gradle:checkKotlinGradlePluginConfigurationErrors' because:
+  Build cache is disabled
+Task ':gradle:checkKotlinGradlePluginConfigurationErrors' is not up-to-date because:
+  Task has not declared any outputs despite executing actions.
+Resolve mutations for :gradle:compileKotlin (Thread[#88,Execution worker,5,main]) started.
+:gradle:compileKotlin (Thread[#88,Execution worker,5,main]) started.
+
+> Task :gradle:compileKotlin
+Deleting stale output file: /Users/vitorlautert/src/flutter/packages/flutter_tools/gradle/build/kotlin/compileKotlin/classpath-snapshot
+Deleting stale output file: /Users/vitorlautert/src/flutter/packages/flutter_tools/gradle/build/kotlin/compileKotlin/cacheable
+Deleting stale output file: /Users/vitorlautert/src/flutter/packages/flutter_tools/gradle/build/classes/kotlin/main
+Watching 1 directory hierarchies to track changes
+Resource missing. [HTTP HEAD: https://dl.google.com/dl/android/maven2/org/jetbrains/kotlin/kotlin-stdlib/1.9.10/kotlin-stdlib-1.9.10.pom]
+Resource missing. [HTTP GET: https://dl.google.com/dl/android/maven2/org/jetbrains/kotlin/kotlin-reflect/1.9.10/kotlin-reflect-1.9.10.pom]
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-reflect/1.9.10/kotlin-reflect-1.9.10.pom to /Users/vitorlautert/.gradle/.tmp/gradle_download5439268881664494144bin
+Found locally available resource with matching checksum: [https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib/1.9.10/kotlin-stdlib-1.9.10.pom, /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.9.10/fbeeb303b1e3e5796360d93943d5138cefd2ee37/kotlin-stdlib-1.9.10.pom]
+Resource missing. [HTTP GET: https://dl.google.com/dl/android/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.9.10/kotlin-stdlib-jdk8-1.9.10.pom]
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.9.10/kotlin-stdlib-jdk8-1.9.10.pom to /Users/vitorlautert/.gradle/.tmp/gradle_download15472501036212048893bin
+Resource missing. [HTTP GET: https://dl.google.com/dl/android/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.9.10/kotlin-stdlib-jdk7-1.9.10.pom]
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.9.10/kotlin-stdlib-jdk7-1.9.10.pom to /Users/vitorlautert/.gradle/.tmp/gradle_download278852545677623780bin
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.9.10/kotlin-stdlib-jdk8-1.9.10.jar to /Users/vitorlautert/.gradle/.tmp/gradle_download4115815049293940536bin
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.9.10/kotlin-stdlib-jdk7-1.9.10.jar to /Users/vitorlautert/.gradle/.tmp/gradle_download8682746942266866471bin
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-reflect/1.9.10/kotlin-reflect-1.9.10.jar to /Users/vitorlautert/.gradle/.tmp/gradle_download3859577867883721697bin
+Transforming gradle-api-8.4.jar with ClasspathEntrySnapshotTransform
+Transforming groovy-3.0.17.jar with ClasspathEntrySnapshotTransform
+Transforming groovy-ant-3.0.17.jar with ClasspathEntrySnapshotTransform
+Transforming groovy-astbuilder-3.0.17.jar with ClasspathEntrySnapshotTransform
+Transforming groovy-console-3.0.17.jar with ClasspathEntrySnapshotTransform
+Transforming groovy-datetime-3.0.17.jar with ClasspathEntrySnapshotTransform
+Transforming groovy-dateutil-3.0.17.jar with ClasspathEntrySnapshotTransform
+Transforming groovy-groovydoc-3.0.17.jar with ClasspathEntrySnapshotTransform
+Transforming groovy-json-3.0.17.jar with ClasspathEntrySnapshotTransform
+Transforming groovy-nio-3.0.17.jar with ClasspathEntrySnapshotTransform
+Transforming groovy-sql-3.0.17.jar with ClasspathEntrySnapshotTransform
+Transforming groovy-templates-3.0.17.jar with ClasspathEntrySnapshotTransform
+Transforming groovy-test-3.0.17.jar with ClasspathEntrySnapshotTransform
+Transforming groovy-xml-3.0.17.jar with ClasspathEntrySnapshotTransform
+Transforming javaparser-core-3.17.0.jar with ClasspathEntrySnapshotTransform
+Transforming kotlin-stdlib-1.9.10.jar with ClasspathEntrySnapshotTransform
+Transforming kotlin-stdlib-common-1.9.10.jar with ClasspathEntrySnapshotTransform
+Transforming kotlin-reflect-1.9.10.jar with ClasspathEntrySnapshotTransform
+Transforming gradle-installation-beacon-8.4.jar with ClasspathEntrySnapshotTransform
+Transforming gradle-kotlin-dsl-extensions-8.4.jar with ClasspathEntrySnapshotTransform
+Transforming gradle-kotlin-dsl-8.4.jar with ClasspathEntrySnapshotTransform
+Transforming gradle-kotlin-dsl-tooling-models-8.4.jar with ClasspathEntrySnapshotTransform
+Transforming annotation-jvm-1.9.1.jar with ClasspathEntrySnapshotTransform
+Caching disabled for ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/wrapper/dists/gradle-8.4-all/56r6xik2f6skrm47et0ibifug/gradle-8.4/lib/groovy-3.0.17.jar because:
+  Build cache is disabled
+Transforming gradle-8.7.3.jar with ClasspathEntrySnapshotTransform
+Caching disabled for ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/wrapper/dists/gradle-8.4-all/56r6xik2f6skrm47et0ibifug/gradle-8.4/lib/groovy-console-3.0.17.jar because:
+  Build cache is disabled
+Caching disabled for ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/wrapper/dists/gradle-8.4-all/56r6xik2f6skrm47et0ibifug/gradle-8.4/lib/groovy-dateutil-3.0.17.jar because:
+  Build cache is disabled
+Caching disabled for ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/wrapper/dists/gradle-8.4-all/56r6xik2f6skrm47et0ibifug/gradle-8.4/lib/groovy-ant-3.0.17.jar because:
+  Build cache is disabled
+Caching disabled for ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/wrapper/dists/gradle-8.4-all/56r6xik2f6skrm47et0ibifug/gradle-8.4/lib/groovy-astbuilder-3.0.17.jar because:
+  Build cache is disabled
+Caching disabled for ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/wrapper/dists/gradle-8.4-all/56r6xik2f6skrm47et0ibifug/gradle-8.4/lib/groovy-datetime-3.0.17.jar because:
+  Build cache is disabled
+Caching disabled for ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/caches/8.4/generated-gradle-jars/gradle-api-8.4.jar because:
+  Build cache is disabled
+ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/wrapper/dists/gradle-8.4-all/56r6xik2f6skrm47et0ibifug/gradle-8.4/lib/groovy-3.0.17.jar is not up-to-date because:
+  No history is available.
+ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/caches/8.4/generated-gradle-jars/gradle-api-8.4.jar is not up-to-date because:
+  No history is available.
+ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/wrapper/dists/gradle-8.4-all/56r6xik2f6skrm47et0ibifug/gradle-8.4/lib/groovy-astbuilder-3.0.17.jar is not up-to-date because:
+  No history is available.
+ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/wrapper/dists/gradle-8.4-all/56r6xik2f6skrm47et0ibifug/gradle-8.4/lib/groovy-dateutil-3.0.17.jar is not up-to-date because:
+  No history is available.
+ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/wrapper/dists/gradle-8.4-all/56r6xik2f6skrm47et0ibifug/gradle-8.4/lib/groovy-ant-3.0.17.jar is not up-to-date because:
+  No history is available.
+ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/wrapper/dists/gradle-8.4-all/56r6xik2f6skrm47et0ibifug/gradle-8.4/lib/groovy-datetime-3.0.17.jar is not up-to-date because:
+  No history is available.
+ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/wrapper/dists/gradle-8.4-all/56r6xik2f6skrm47et0ibifug/gradle-8.4/lib/groovy-console-3.0.17.jar is not up-to-date because:
+  No history is available.
+Transforming kotlin-reflect-1.9.10.jar with ClasspathEntrySnapshotTransform
+Transforming kotlinx-serialization-json-jvm-1.4.0.jar with ClasspathEntrySnapshotTransform
+Transforming kotlinx-serialization-core-jvm-1.4.0.jar with ClasspathEntrySnapshotTransform
+Transforming kotlin-stdlib-jdk8-1.9.10.jar with ClasspathEntrySnapshotTransform
+Transforming kotlin-stdlib-jdk7-1.9.10.jar with ClasspathEntrySnapshotTransform
+Transforming kotlin-stdlib-1.9.24.jar with ClasspathEntrySnapshotTransform
+Transforming kotlin-gradle-plugin-1.8.0-gradle76.jar with ClasspathEntrySnapshotTransform
+Caching disabled for ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/wrapper/dists/gradle-8.4-all/56r6xik2f6skrm47et0ibifug/gradle-8.4/lib/groovy-groovydoc-3.0.17.jar because:
+  Build cache is disabled
+ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/wrapper/dists/gradle-8.4-all/56r6xik2f6skrm47et0ibifug/gradle-8.4/lib/groovy-groovydoc-3.0.17.jar is not up-to-date because:
+  No history is available.
+Caching disabled for ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/wrapper/dists/gradle-8.4-all/56r6xik2f6skrm47et0ibifug/gradle-8.4/lib/groovy-sql-3.0.17.jar because:
+  Build cache is disabled
+Caching disabled for ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/wrapper/dists/gradle-8.4-all/56r6xik2f6skrm47et0ibifug/gradle-8.4/lib/groovy-json-3.0.17.jar because:
+  Build cache is disabled
+ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/wrapper/dists/gradle-8.4-all/56r6xik2f6skrm47et0ibifug/gradle-8.4/lib/groovy-sql-3.0.17.jar is not up-to-date because:
+  No history is available.
+Caching disabled for ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/wrapper/dists/gradle-8.4-all/56r6xik2f6skrm47et0ibifug/gradle-8.4/lib/groovy-nio-3.0.17.jar because:
+  Build cache is disabled
+ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/wrapper/dists/gradle-8.4-all/56r6xik2f6skrm47et0ibifug/gradle-8.4/lib/groovy-nio-3.0.17.jar is not up-to-date because:
+  No history is available.
+ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/wrapper/dists/gradle-8.4-all/56r6xik2f6skrm47et0ibifug/gradle-8.4/lib/groovy-json-3.0.17.jar is not up-to-date because:
+  No history is available.
+Caching disabled for ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/wrapper/dists/gradle-8.4-all/56r6xik2f6skrm47et0ibifug/gradle-8.4/lib/groovy-templates-3.0.17.jar because:
+  Build cache is disabled
+ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/wrapper/dists/gradle-8.4-all/56r6xik2f6skrm47et0ibifug/gradle-8.4/lib/groovy-templates-3.0.17.jar is not up-to-date because:
+  No history is available.
+Caching disabled for ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/wrapper/dists/gradle-8.4-all/56r6xik2f6skrm47et0ibifug/gradle-8.4/lib/groovy-test-3.0.17.jar because:
+  Build cache is disabled
+ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/wrapper/dists/gradle-8.4-all/56r6xik2f6skrm47et0ibifug/gradle-8.4/lib/groovy-test-3.0.17.jar is not up-to-date because:
+  No history is available.
+Caching disabled for ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/wrapper/dists/gradle-8.4-all/56r6xik2f6skrm47et0ibifug/gradle-8.4/lib/groovy-xml-3.0.17.jar because:
+  Build cache is disabled
+ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/wrapper/dists/gradle-8.4-all/56r6xik2f6skrm47et0ibifug/gradle-8.4/lib/groovy-xml-3.0.17.jar is not up-to-date because:
+  No history is available.
+Transforming builder-8.7.3.jar with ClasspathEntrySnapshotTransform
+Caching disabled for ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/wrapper/dists/gradle-8.4-all/56r6xik2f6skrm47et0ibifug/gradle-8.4/lib/javaparser-core-3.17.0.jar because:
+  Build cache is disabled
+ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/wrapper/dists/gradle-8.4-all/56r6xik2f6skrm47et0ibifug/gradle-8.4/lib/javaparser-core-3.17.0.jar is not up-to-date because:
+  No history is available.
+Caching disabled for ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/wrapper/dists/gradle-8.4-all/56r6xik2f6skrm47et0ibifug/gradle-8.4/lib/kotlin-stdlib-1.9.10.jar because:
+  Build cache is disabled
+ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/wrapper/dists/gradle-8.4-all/56r6xik2f6skrm47et0ibifug/gradle-8.4/lib/kotlin-stdlib-1.9.10.jar is not up-to-date because:
+  No history is available.
+Caching disabled for ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/wrapper/dists/gradle-8.4-all/56r6xik2f6skrm47et0ibifug/gradle-8.4/lib/kotlin-stdlib-common-1.9.10.jar because:
+  Build cache is disabled
+ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/wrapper/dists/gradle-8.4-all/56r6xik2f6skrm47et0ibifug/gradle-8.4/lib/kotlin-stdlib-common-1.9.10.jar is not up-to-date because:
+  No history is available.
+Caching disabled for ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/wrapper/dists/gradle-8.4-all/56r6xik2f6skrm47et0ibifug/gradle-8.4/lib/kotlin-reflect-1.9.10.jar because:
+  Build cache is disabled
+ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/wrapper/dists/gradle-8.4-all/56r6xik2f6skrm47et0ibifug/gradle-8.4/lib/kotlin-reflect-1.9.10.jar is not up-to-date because:
+  No history is available.
+Caching disabled for ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/wrapper/dists/gradle-8.4-all/56r6xik2f6skrm47et0ibifug/gradle-8.4/lib/gradle-installation-beacon-8.4.jar because:
+  Build cache is disabled
+ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/wrapper/dists/gradle-8.4-all/56r6xik2f6skrm47et0ibifug/gradle-8.4/lib/gradle-installation-beacon-8.4.jar is not up-to-date because:
+  No history is available.
+Caching disabled for ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/caches/8.4/generated-gradle-jars/gradle-kotlin-dsl-extensions-8.4.jar because:
+  Build cache is disabled
+ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/caches/8.4/generated-gradle-jars/gradle-kotlin-dsl-extensions-8.4.jar is not up-to-date because:
+  No history is available.
+Caching disabled for ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/wrapper/dists/gradle-8.4-all/56r6xik2f6skrm47et0ibifug/gradle-8.4/lib/gradle-kotlin-dsl-8.4.jar because:
+  Build cache is disabled
+ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/wrapper/dists/gradle-8.4-all/56r6xik2f6skrm47et0ibifug/gradle-8.4/lib/gradle-kotlin-dsl-8.4.jar is not up-to-date because:
+  No history is available.
+Transforming builder-model-8.7.3.jar with ClasspathEntrySnapshotTransform
+Transforming gradle-api-8.7.3.jar with ClasspathEntrySnapshotTransform
+Transforming kotlin-gradle-plugin-model-1.8.0.jar with ClasspathEntrySnapshotTransform
+Transforming kotlin-gradle-plugin-api-1.8.0-gradle76.jar with ClasspathEntrySnapshotTransform
+Transforming kotlin-gradle-plugin-api-1.8.0.jar with ClasspathEntrySnapshotTransform
+Transforming kotlin-tooling-core-1.8.0.jar with ClasspathEntrySnapshotTransform
+Transforming annotations-13.0.jar with ClasspathEntrySnapshotTransform
+Transforming manifest-merger-31.7.3.jar with ClasspathEntrySnapshotTransform
+Transforming zipflinger-8.7.3.jar with ClasspathEntrySnapshotTransform
+Transforming apksig-8.7.3.jar with ClasspathEntrySnapshotTransform
+Transforming apkzlib-8.7.3.jar with ClasspathEntrySnapshotTransform
+Transforming javawriter-2.5.0.jar with ClasspathEntrySnapshotTransform
+Transforming asm-9.6.jar with ClasspathEntrySnapshotTransform
+Transforming kotlin-native-utils-1.8.0.jar with ClasspathEntrySnapshotTransform
+Transforming kotlin-project-model-1.8.0.jar with ClasspathEntrySnapshotTransform
+Transforming kotlin-util-io-1.8.0.jar with ClasspathEntrySnapshotTransform
+Caching disabled for ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/wrapper/dists/gradle-8.4-all/56r6xik2f6skrm47et0ibifug/gradle-8.4/lib/gradle-kotlin-dsl-tooling-models-8.4.jar because:
+  Build cache is disabled
+ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/wrapper/dists/gradle-8.4-all/56r6xik2f6skrm47et0ibifug/gradle-8.4/lib/gradle-kotlin-dsl-tooling-models-8.4.jar is not up-to-date because:
+  No history is available.
+Caching disabled for ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/androidx.annotation/annotation-jvm/1.9.1/b17951747e38bf3986a24431b9ba0d039958aa5f/annotation-jvm-1.9.1.jar because:
+  Build cache is disabled
+ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/androidx.annotation/annotation-jvm/1.9.1/b17951747e38bf3986a24431b9ba0d039958aa5f/annotation-jvm-1.9.1.jar is not up-to-date because:
+  No history is available.
+Caching disabled for ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-serialization-json-jvm/1.4.0/cfa3e57d044a20e5c9e4561a997df823e2f1c81a/kotlinx-serialization-json-jvm-1.4.0.jar because:
+  Build cache is disabled
+ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-serialization-json-jvm/1.4.0/cfa3e57d044a20e5c9e4561a997df823e2f1c81a/kotlinx-serialization-json-jvm-1.4.0.jar is not up-to-date because:
+  No history is available.
+Caching disabled for ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-serialization-core-jvm/1.4.0/9b00d574374ae0201a505ab54c7744586866dc27/kotlinx-serialization-core-jvm-1.4.0.jar because:
+  Build cache is disabled
+ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-serialization-core-jvm/1.4.0/9b00d574374ae0201a505ab54c7744586866dc27/kotlinx-serialization-core-jvm-1.4.0.jar is not up-to-date because:
+  No history is available.
+Caching disabled for ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.9.10/c7510d64a83411a649c76f2778304ddf71d7437b/kotlin-stdlib-jdk8-1.9.10.jar because:
+  Build cache is disabled
+ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.9.10/c7510d64a83411a649c76f2778304ddf71d7437b/kotlin-stdlib-jdk8-1.9.10.jar is not up-to-date because:
+  No history is available.
+Caching disabled for ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.9.10/bc5bfc2690338defd5195b05c57562f2194eeb10/kotlin-stdlib-jdk7-1.9.10.jar because:
+  Build cache is disabled
+ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.9.10/bc5bfc2690338defd5195b05c57562f2194eeb10/kotlin-stdlib-jdk7-1.9.10.jar is not up-to-date because:
+  No history is available.
+Caching disabled for ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.9.24/9928532f12c66ad816a625b3f9984f8368ca6d2b/kotlin-stdlib-1.9.24.jar because:
+  Build cache is disabled
+ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.9.24/9928532f12c66ad816a625b3f9984f8368ca6d2b/kotlin-stdlib-1.9.24.jar is not up-to-date because:
+  No history is available.
+Caching disabled for ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder-model/8.7.3/149bea893f64cd61fe89b519550bf779e4314e94/builder-model-8.7.3.jar because:
+  Build cache is disabled
+ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder-model/8.7.3/149bea893f64cd61fe89b519550bf779e4314e94/builder-model-8.7.3.jar is not up-to-date because:
+  No history is available.
+Caching disabled for ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle/8.7.3/557c0eaed243df7b293d8b1f2c252d97fcc71dda/gradle-8.7.3.jar because:
+  Build cache is disabled
+ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle/8.7.3/557c0eaed243df7b293d8b1f2c252d97fcc71dda/gradle-8.7.3.jar is not up-to-date because:
+  No history is available.
+Caching disabled for ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle-api/8.7.3/7b90ce26dc62c0748b6de923ed76c50a91ab9b26/gradle-api-8.7.3.jar because:
+  Build cache is disabled
+ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle-api/8.7.3/7b90ce26dc62c0748b6de923ed76c50a91ab9b26/gradle-api-8.7.3.jar is not up-to-date because:
+  No history is available.
+Caching disabled for ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-model/1.8.0/9da2fce7af0a94348001ee8dd20a82167f5de284/kotlin-gradle-plugin-model-1.8.0.jar because:
+  Build cache is disabled
+ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-model/1.8.0/9da2fce7af0a94348001ee8dd20a82167f5de284/kotlin-gradle-plugin-model-1.8.0.jar is not up-to-date because:
+  No history is available.
+Caching disabled for ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-api/1.8.0/29f79a3bb109e05b07f1d2893074ab176a4276e0/kotlin-gradle-plugin-api-1.8.0-gradle76.jar because:
+  Build cache is disabled
+ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-api/1.8.0/29f79a3bb109e05b07f1d2893074ab176a4276e0/kotlin-gradle-plugin-api-1.8.0-gradle76.jar is not up-to-date because:
+  No history is available.
+Caching disabled for ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-api/1.8.0/29f79a3bb109e05b07f1d2893074ab176a4276e0/kotlin-gradle-plugin-api-1.8.0.jar because:
+  Build cache is disabled
+ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-api/1.8.0/29f79a3bb109e05b07f1d2893074ab176a4276e0/kotlin-gradle-plugin-api-1.8.0.jar is not up-to-date because:
+  No history is available.
+Caching disabled for ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-tooling-core/1.8.0/da3a4252e4b48833eb566227b2baecbaede8993/kotlin-tooling-core-1.8.0.jar because:
+  Build cache is disabled
+ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-tooling-core/1.8.0/da3a4252e4b48833eb566227b2baecbaede8993/kotlin-tooling-core-1.8.0.jar is not up-to-date because:
+  No history is available.
+Caching disabled for ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar because:
+  Build cache is disabled
+ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar is not up-to-date because:
+  No history is available.
+Caching disabled for ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/com.android/zipflinger/8.7.3/de8e3267995699af356740cf562cbedb485f5763/zipflinger-8.7.3.jar because:
+  Build cache is disabled
+ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/com.android/zipflinger/8.7.3/de8e3267995699af356740cf562cbedb485f5763/zipflinger-8.7.3.jar is not up-to-date because:
+  No history is available.
+Caching disabled for ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/com.android.tools.build/manifest-merger/31.7.3/d0489e76e4eb785336317add6b65d57b928a429/manifest-merger-31.7.3.jar because:
+  Build cache is disabled
+ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/com.android.tools.build/manifest-merger/31.7.3/d0489e76e4eb785336317add6b65d57b928a429/manifest-merger-31.7.3.jar is not up-to-date because:
+  No history is available.
+Caching disabled for ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/com.squareup/javawriter/2.5.0/81241ff7078ef14f42ea2a8995fa09c096256e6b/javawriter-2.5.0.jar because:
+  Build cache is disabled
+ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/com.squareup/javawriter/2.5.0/81241ff7078ef14f42ea2a8995fa09c096256e6b/javawriter-2.5.0.jar is not up-to-date because:
+  No history is available.
+Caching disabled for ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/com.android.tools.build/apkzlib/8.7.3/d656b52facbb301b8bdc1e40a5ae008bcf335fe9/apkzlib-8.7.3.jar because:
+  Build cache is disabled
+ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/com.android.tools.build/apkzlib/8.7.3/d656b52facbb301b8bdc1e40a5ae008bcf335fe9/apkzlib-8.7.3.jar is not up-to-date because:
+  No history is available.
+Caching disabled for ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/com.android.tools.build/apksig/8.7.3/f005788487574c7d6ba23dea63bf8cb3a4f164a6/apksig-8.7.3.jar because:
+  Build cache is disabled
+ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/com.android.tools.build/apksig/8.7.3/f005788487574c7d6ba23dea63bf8cb3a4f164a6/apksig-8.7.3.jar is not up-to-date because:
+  No history is available.
+Caching disabled for ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/9.6/aa205cf0a06dbd8e04ece91c0b37c3f5d567546a/asm-9.6.jar because:
+  Build cache is disabled
+ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/9.6/aa205cf0a06dbd8e04ece91c0b37c3f5d567546a/asm-9.6.jar is not up-to-date because:
+  No history is available.
+Caching disabled for ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-native-utils/1.8.0/73361435f42e1fecbd81f686ccaa8aa1c498b941/kotlin-native-utils-1.8.0.jar because:
+  Build cache is disabled
+ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-native-utils/1.8.0/73361435f42e1fecbd81f686ccaa8aa1c498b941/kotlin-native-utils-1.8.0.jar is not up-to-date because:
+  No history is available.
+Caching disabled for ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-project-model/1.8.0/2b8d20018168339835a79512f46f3251ff09caf5/kotlin-project-model-1.8.0.jar because:
+  Build cache is disabled
+ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-project-model/1.8.0/2b8d20018168339835a79512f46f3251ff09caf5/kotlin-project-model-1.8.0.jar is not up-to-date because:
+  No history is available.
+Caching disabled for ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-util-io/1.8.0/1d7ca3cc3c24111ca8a12e29b10d6df0f778afd8/kotlin-util-io-1.8.0.jar because:
+  Build cache is disabled
+ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-util-io/1.8.0/1d7ca3cc3c24111ca8a12e29b10d6df0f778afd8/kotlin-util-io-1.8.0.jar is not up-to-date because:
+  No history is available.
+Caching disabled for ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin/1.8.0/d79a079634e8d3bd92c594b224f4de2086bb4a10/kotlin-gradle-plugin-1.8.0-gradle76.jar because:
+  Build cache is disabled
+ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin/1.8.0/d79a079634e8d3bd92c594b224f4de2086bb4a10/kotlin-gradle-plugin-1.8.0-gradle76.jar is not up-to-date because:
+  No history is available.
+Caching disabled for ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder/8.7.3/8d3e529cc87e89552433c8337bd0b616ef545fa1/builder-8.7.3.jar because:
+  Build cache is disabled
+ClasspathEntrySnapshotTransform: /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder/8.7.3/8d3e529cc87e89552433c8337bd0b616ef545fa1/builder-8.7.3.jar is not up-to-date because:
+  No history is available.
+Resource missing. [HTTP HEAD: https://dl.google.com/dl/android/maven2/org/jetbrains/kotlin/kotlin-compiler-embeddable/1.9.20/kotlin-compiler-embeddable-1.9.20.pom]
+Found locally available resource with matching checksum: [https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-compiler-embeddable/1.9.20/kotlin-compiler-embeddable-1.9.20.pom, /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/1.9.20/23708dbf881db9113d723ede3309461e63b95cb0/kotlin-compiler-embeddable-1.9.20.pom]
+Resource missing. [HTTP GET: https://dl.google.com/dl/android/maven2/org/jetbrains/kotlin/kotlin-stdlib/1.9.20/kotlin-stdlib-1.9.20.pom]
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib/1.9.20/kotlin-stdlib-1.9.20.pom to /Users/vitorlautert/.gradle/.tmp/gradle_download301334304125555857bin
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib/1.9.20/kotlin-stdlib-1.9.20.module to /Users/vitorlautert/.gradle/.tmp/gradle_download5600579505783270792bin
+Resource missing. [HTTP GET: https://dl.google.com/dl/android/maven2/org/jetbrains/kotlin/kotlin-script-runtime/1.9.20/kotlin-script-runtime-1.9.20.pom]
+Resource missing. [HTTP HEAD: https://dl.google.com/dl/android/maven2/org/jetbrains/kotlin/kotlin-daemon-embeddable/1.9.20/kotlin-daemon-embeddable-1.9.20.pom]
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-script-runtime/1.9.20/kotlin-script-runtime-1.9.20.pom to /Users/vitorlautert/.gradle/.tmp/gradle_download7990958284138615632bin
+Found locally available resource with matching checksum: [https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-daemon-embeddable/1.9.20/kotlin-daemon-embeddable-1.9.20.pom, /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-daemon-embeddable/1.9.20/466f6263b73610d0f8e5597faadd0af2105c38fa/kotlin-daemon-embeddable-1.9.20.pom]
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-script-runtime/1.9.20/kotlin-script-runtime-1.9.20.jar to /Users/vitorlautert/.gradle/.tmp/gradle_download15104884560065748247bin
+Found locally available resource with matching checksum: [https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-compiler-embeddable/1.9.20/kotlin-compiler-embeddable-1.9.20.jar, /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/1.9.20/b44d2f7d8c1c67c0ed66d40e57e52623ca753db7/kotlin-compiler-embeddable-1.9.20.jar]
+Found locally available resource with matching checksum: [https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-daemon-embeddable/1.9.20/kotlin-daemon-embeddable-1.9.20.jar, /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-daemon-embeddable/1.9.20/a2a6b491bc53049e2f1af33245481db49034ba52/kotlin-daemon-embeddable-1.9.20.jar]
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib/1.9.20/kotlin-stdlib-1.9.20.jar to /Users/vitorlautert/.gradle/.tmp/gradle_download4066042736666596997bin
+Resource missing. [HTTP GET: https://dl.google.com/dl/android/maven2/org/jetbrains/kotlin/kotlin-assignment-compiler-plugin-embeddable/1.9.20/kotlin-assignment-compiler-plugin-embeddable-1.9.20.pom]
+Resource missing. [HTTP HEAD: https://dl.google.com/dl/android/maven2/org/jetbrains/kotlin/kotlin-scripting-compiler-embeddable/1.9.20/kotlin-scripting-compiler-embeddable-1.9.20.pom]
+Resource missing. [HTTP GET: https://dl.google.com/dl/android/maven2/org/jetbrains/kotlin/kotlin-sam-with-receiver-compiler-plugin-embeddable/1.9.20/kotlin-sam-with-receiver-compiler-plugin-embeddable-1.9.20.pom]
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-assignment-compiler-plugin-embeddable/1.9.20/kotlin-assignment-compiler-plugin-embeddable-1.9.20.pom to /Users/vitorlautert/.gradle/.tmp/gradle_download9598504175385237453bin
+Found locally available resource with matching checksum: [https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-scripting-compiler-embeddable/1.9.20/kotlin-scripting-compiler-embeddable-1.9.20.pom, /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-compiler-embeddable/1.9.20/b5541fa49ab0ae80e75464df70dc42b910d75403/kotlin-scripting-compiler-embeddable-1.9.20.pom]
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-sam-with-receiver-compiler-plugin-embeddable/1.9.20/kotlin-sam-with-receiver-compiler-plugin-embeddable-1.9.20.pom to /Users/vitorlautert/.gradle/.tmp/gradle_download17221852325438277873bin
+Resource missing. [HTTP HEAD: https://dl.google.com/dl/android/maven2/org/jetbrains/kotlin/kotlin-scripting-compiler-impl-embeddable/1.9.20/kotlin-scripting-compiler-impl-embeddable-1.9.20.pom]
+Found locally available resource with matching checksum: [https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-scripting-compiler-impl-embeddable/1.9.20/kotlin-scripting-compiler-impl-embeddable-1.9.20.pom, /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-compiler-impl-embeddable/1.9.20/cf1eb6f9f29382a9b76742dae45c1fea6e570c79/kotlin-scripting-compiler-impl-embeddable-1.9.20.pom]
+Resource missing. [HTTP HEAD: https://dl.google.com/dl/android/maven2/org/jetbrains/kotlin/kotlin-scripting-jvm/1.9.20/kotlin-scripting-jvm-1.9.20.pom]
+Found locally available resource with matching checksum: [https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-scripting-jvm/1.9.20/kotlin-scripting-jvm-1.9.20.pom, /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-jvm/1.9.20/8b0eac0fce86ef7cadeb85a2befaeeb09dde6f02/kotlin-scripting-jvm-1.9.20.pom]
+Resource missing. [HTTP HEAD: https://dl.google.com/dl/android/maven2/org/jetbrains/kotlin/kotlin-scripting-common/1.9.20/kotlin-scripting-common-1.9.20.pom]
+Found locally available resource with matching checksum: [https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-scripting-common/1.9.20/kotlin-scripting-common-1.9.20.pom, /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-common/1.9.20/68f2e9c6aea484d72d0b23d7afee76850d949bce/kotlin-scripting-common-1.9.20.pom]
+Found locally available resource with matching checksum: [https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-scripting-common/1.9.20/kotlin-scripting-common-1.9.20.jar, /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-common/1.9.20/d2abd0f9c63e61fa54bd43f29458c2606b02abdc/kotlin-scripting-common-1.9.20.jar]
+Found locally available resource with matching checksum: [https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-scripting-compiler-impl-embeddable/1.9.20/kotlin-scripting-compiler-impl-embeddable-1.9.20.jar, /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-compiler-impl-embeddable/1.9.20/ed985bbca9227a8cf97d5b2f81d371f1d7efee61/kotlin-scripting-compiler-impl-embeddable-1.9.20.jar]
+Found locally available resource with matching checksum: [https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-scripting-compiler-embeddable/1.9.20/kotlin-scripting-compiler-embeddable-1.9.20.jar, /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-compiler-embeddable/1.9.20/c2c32f862094042ee6c84e21df4669b41191af88/kotlin-scripting-compiler-embeddable-1.9.20.jar]
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-sam-with-receiver-compiler-plugin-embeddable/1.9.20/kotlin-sam-with-receiver-compiler-plugin-embeddable-1.9.20.jar to /Users/vitorlautert/.gradle/.tmp/gradle_download9126293937696365415bin
+Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-assignment-compiler-plugin-embeddable/1.9.20/kotlin-assignment-compiler-plugin-embeddable-1.9.20.jar to /Users/vitorlautert/.gradle/.tmp/gradle_download10309102991126139870bin
+Found locally available resource with matching checksum: [https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-scripting-jvm/1.9.20/kotlin-scripting-jvm-1.9.20.jar, /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-jvm/1.9.20/5277cafe6949e047a271433202f32e8377b00ebb/kotlin-scripting-jvm-1.9.20.jar]
+Caching disabled for task ':gradle:compileKotlin' because:
+  Build cache is disabled
+Task ':gradle:compileKotlin' is not up-to-date because:
+  No history is available.
+The input changes require a full rebuild for incremental task ':gradle:compileKotlin'.
+file or directory '/Users/vitorlautert/src/flutter/packages/flutter_tools/gradle/src/main/java', not found
+file or directory '/Users/vitorlautert/src/flutter/packages/flutter_tools/gradle/src/main/java', not found
+file or directory '/Users/vitorlautert/src/flutter/packages/flutter_tools/gradle/src/main/java', not found
+file or directory '/Users/vitorlautert/src/flutter/packages/flutter_tools/gradle/src/main/java', not found
+Kotlin source files: /Users/vitorlautert/src/flutter/packages/flutter_tools/gradle/src/main/kotlin/VersionUtils.kt, /Users/vitorlautert/src/flutter/packages/flutter_tools/gradle/src/main/kotlin/FlutterPluginConstants.kt, /Users/vitorlautert/src/flutter/packages/flutter_tools/gradle/src/main/kotlin/tasks/FlutterTaskHelper.kt, /Users/vitorlautert/src/flutter/packages/flutter_tools/gradle/src/main/kotlin/tasks/BaseFlutterTask.kt, /Users/vitorlautert/src/flutter/packages/flutter_tools/gradle/src/main/kotlin/tasks/BaseFlutterTaskHelper.kt, /Users/vitorlautert/src/flutter/packages/flutter_tools/gradle/src/main/kotlin/tasks/FlutterTask.kt, /Users/vitorlautert/src/flutter/packages/flutter_tools/gradle/src/main/kotlin/IntentFilterCheck.kt, /Users/vitorlautert/src/flutter/packages/flutter_tools/gradle/src/main/kotlin/plugins/PluginHandler.kt, /Users/vitorlautert/src/flutter/packages/flutter_tools/gradle/src/main/kotlin/FlutterExtension.kt, /Users/vitorlautert/src/flutter/packages/flutter_tools/gradle/src/main/kotlin/BaseApplicationNameHandler.kt, /Users/vitorlautert/src/flutter/packages/flutter_tools/gradle/src/main/kotlin/DependencyVersionChecker.kt, /Users/vitorlautert/src/flutter/packages/flutter_tools/gradle/src/main/kotlin/AppLinkSettings.kt, /Users/vitorlautert/src/flutter/packages/flutter_tools/gradle/src/main/kotlin/NativePluginLoaderReflectionBridge.kt, /Users/vitorlautert/src/flutter/packages/flutter_tools/gradle/src/main/kotlin/FlutterPluginUtils.kt, /Users/vitorlautert/src/flutter/packages/flutter_tools/gradle/src/main/kotlin/FlutterAppPluginLoaderPlugin.kt, /Users/vitorlautert/src/flutter/packages/flutter_tools/gradle/src/main/kotlin/FlutterPlugin.kt, /Users/vitorlautert/src/flutter/packages/flutter_tools/gradle/src/main/kotlin/Deeplink.kt
+Java source files: 
+Script source files: 
+Script file extensions: 
+Using Kotlin/JVM incremental compilation
+[KOTLIN] Kotlin compilation 'jdkHome' argument: /Applications/Android Studio.app/Contents/jbr/Contents/Home
+
+Resolve mutations for :gradle:pluginDescriptors (Thread[#94,Execution worker Thread 7,5,main]) started.
+:gradle:pluginDescriptors (Thread[#94,Execution worker Thread 7,5,main]) started.
+
+> Task :gradle:pluginDescriptors
+Deleting stale output file: /Users/vitorlautert/src/flutter/packages/flutter_tools/gradle/build/pluginDescriptors
+Caching disabled for task ':gradle:pluginDescriptors' because:
+  Build cache is disabled
+Task ':gradle:pluginDescriptors' is not up-to-date because:
+  No history is available.
+Resolve mutations for :gradle:processResources (Thread[#94,Execution worker Thread 7,5,main]) started.
+:gradle:processResources (Thread[#94,Execution worker Thread 7,5,main]) started.
+
+> Task :gradle:processResources
+Deleting stale output file: /Users/vitorlautert/src/flutter/packages/flutter_tools/gradle/build/resources/main
+Caching disabled for task ':gradle:processResources' because:
+  Build cache is disabled
+Task ':gradle:processResources' is not up-to-date because:
+  No history is available.
+file or directory '/Users/vitorlautert/src/flutter/packages/flutter_tools/gradle/src/main/resources', not found
+
+> Task :gradle:compileKotlin
+i: starting the daemon as: /Applications/Android Studio.app/Contents/jbr/Contents/Home/bin/java -cp /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/1.9.20/b44d2f7d8c1c67c0ed66d40e57e52623ca753db7/kotlin-compiler-embeddable-1.9.20.jar:/Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.9.20/e58b4816ac517e9cc5df1db051120c63d4cde669/kotlin-stdlib-1.9.20.jar:/Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/1.9.20/6fdfef711b8e07f1a4d0979a60acd7bc8a800777/kotlin-script-runtime-1.9.20.jar:/Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.6.10/1cbe9c92c12a94eea200d23c2bbaedaf3daf5132/kotlin-reflect-1.6.10.jar:/Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-daemon-embeddable/1.9.20/a2a6b491bc53049e2f1af33245481db49034ba52/kotlin-daemon-embeddable-1.9.20.jar:/Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.jetbrains.intellij.deps/trove4j/1.0.20200330/3afb14d5f9ceb459d724e907a21145e8ff394f02/trove4j-1.0.20200330.jar:/Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar -Djava.awt.headless=true -D$java.rmi.server.hostname=127.0.0.1 -Xmx8G -XX:MaxMetaspaceSize=4G -XX:ReservedCodeCacheSize=512m -Dkotlin.environment.keepalive -ea --add-exports java.base/sun.nio.ch=ALL-UNNAMED org.jetbrains.kotlin.daemon.KotlinCompileDaemon --daemon-runFilesPath /Users/vitorlautert/Library/Application Support/kotlin/daemon --daemon-autoshutdownIdleSeconds=7200 --daemon-compilerClasspath /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/1.9.20/b44d2f7d8c1c67c0ed66d40e57e52623ca753db7/kotlin-compiler-embeddable-1.9.20.jar:/Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.9.20/e58b4816ac517e9cc5df1db051120c63d4cde669/kotlin-stdlib-1.9.20.jar:/Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/1.9.20/6fdfef711b8e07f1a4d0979a60acd7bc8a800777/kotlin-script-runtime-1.9.20.jar:/Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.6.10/1cbe9c92c12a94eea200d23c2bbaedaf3daf5132/kotlin-reflect-1.6.10.jar:/Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-daemon-embeddable/1.9.20/a2a6b491bc53049e2f1af33245481db49034ba52/kotlin-daemon-embeddable-1.9.20.jar:/Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.jetbrains.intellij.deps/trove4j/1.0.20200330/3afb14d5f9ceb459d724e907a21145e8ff394f02/trove4j-1.0.20200330.jar:/Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar
+i: [daemon client] Could not start process with native process launcher, falling back to ProcessBuilder#start (net.rubygrapefruit.platform.NativeIntegrationUnavailableException: Native integration is not available for Mac OS X aarch64.)
+i: Received the message signalling that the daemon is ready
+i: new daemon started, trying to find it
+i: found daemon on port 17869 (8 ms old), trying to connect
+i: connected to the daemon
+Options for KOTLIN DAEMON: IncrementalCompilationOptions(super=CompilationOptions(compilerMode=INCREMENTAL_COMPILER, targetPlatform=JVM, reportCategories=[0, 3], reportSeverity=2, requestedCompilationResults=[0], kotlinScriptExtensions=[]), areFileChangesKnown=false, modifiedFiles=null, deletedFiles=null, classpathChanges=NotAvailableForNonIncrementalRun, workingDir=/Users/vitorlautert/src/flutter/packages/flutter_tools/gradle/build/kotlin/compileKotlin/cacheable, multiModuleICSettings=MultiModuleICSettings(buildHistoryFile=/Users/vitorlautert/src/flutter/packages/flutter_tools/gradle/build/kotlin/compileKotlin/local-state/build-history.bin, useModuleDetection=false), usePreciseJavaTracking=true, outputFiles=[/Users/vitorlautert/src/flutter/packages/flutter_tools/gradle/build/classes/kotlin/main, /Users/vitorlautert/src/flutter/packages/flutter_tools/gradle/build/kotlin/compileKotlin/cacheable, /Users/vitorlautert/src/flutter/packages/flutter_tools/gradle/build/kotlin/compileKotlin/local-state])
+w: file:///Users/vitorlautert/src/flutter/packages/flutter_tools/gradle/src/main/kotlin/DependencyVersionChecker.kt:183:39 'getter for minSdkVersion: AndroidVersion' is deprecated. Will be removed in v9.0
+Resolve mutations for :gradle:compileJava (Thread[#88,Execution worker,5,main]) started.
+:gradle:compileJava (Thread[#88,Execution worker,5,main]) started.
+
+> Task :gradle:compileJava NO-SOURCE
+Skipping task ':gradle:compileJava' as it has no source files and no previous output files.
+Resolve mutations for :gradle:compileGroovy (Thread[#88,Execution worker,5,main]) started.
+:gradle:compileGroovy (Thread[#88,Execution worker,5,main]) started.
+
+> Task :gradle:compileGroovy NO-SOURCE
+Skipping task ':gradle:compileGroovy' as it has no source files and no previous output files.
+Resolve mutations for :gradle:classes (Thread[#88,Execution worker,5,main]) started.
+:gradle:classes (Thread[#88,Execution worker,5,main]) started.
+
+> Task :gradle:classes
+Skipping task ':gradle:classes' as it has no actions.
+Resolve mutations for :gradle:jar (Thread[#88,Execution worker,5,main]) started.
+:gradle:jar (Thread[#88,Execution worker,5,main]) started.
+
+> Task :gradle:jar
+Deleting stale output file: /Users/vitorlautert/src/flutter/packages/flutter_tools/gradle/build/libs/gradle-1.0.0.jar
+Caching disabled for task ':gradle:jar' because:
+  Build cache is disabled
+Task ':gradle:jar' is not up-to-date because:
+  No history is available.
+file or directory '/Users/vitorlautert/src/flutter/packages/flutter_tools/gradle/build/classes/java/main', not found
+file or directory '/Users/vitorlautert/src/flutter/packages/flutter_tools/gradle/build/classes/groovy/main', not found
+Resource missing. [HTTP HEAD: https://dl.google.com/dl/android/maven2/org/jetbrains/kotlin/kotlin-stdlib-common/1.9.10/kotlin-stdlib-common-1.9.10.pom]
+Found locally available resource with matching checksum: [https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-common/1.9.10/kotlin-stdlib-common-1.9.10.pom, /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.9.10/181777fda8a0067c932c3cb27997c6753dcba730/kotlin-stdlib-common-1.9.10.pom]
+Found locally available resource with matching checksum: [https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib/1.9.10/kotlin-stdlib-1.9.10.jar, /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.9.10/72812e8a368917ab5c0a5081b56915ffdfec93b7/kotlin-stdlib-1.9.10.jar]
+Found locally available resource with matching checksum: [https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-common/1.9.10/kotlin-stdlib-common-1.9.10.jar, /Users/vitorlautert/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.9.10/dafaf2c27f27c09220cee312df10917d9a5d97ce/kotlin-stdlib-common-1.9.10.jar]
