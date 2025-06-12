@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/evento/event.dart'; 
-import 'package:flutter_application_1/provider/bookmarked_events_provider.dart'; 
-import 'package:provider/provider.dart'; 
-import 'package:flutter_application_1/widgets/ticket_card.dart'; 
+import 'package:flutter_application_1/evento/event.dart';
+import 'package:flutter_application_1/provider/bookmarked_events_provider.dart';
+import 'package:provider/provider.dart';
+import 'package:flutter_application_1/widgets/ticket_card.dart';
 import 'package:flutter_application_1/pages/auth_screen.dart';
+import 'package:flutter_application_1/provider/confirmed_events_provider.dart';
 
-
-
-class User extends StatefulWidget { 
+class User extends StatefulWidget {
   const User({super.key});
 
   @override
@@ -18,8 +17,7 @@ class _UserState extends State<User> with SingleTickerProviderStateMixin {
   late TabController _tabController;
   late TextEditingController _nameController;
   late TextEditingController _emailController;
-  bool _isEditing = false; 
-
+  bool _isEditing = false;
 
   String _userName = 'Vitor Lautert';
   String _userEmail = 'vitor@example.com';
@@ -55,8 +53,15 @@ class _UserState extends State<User> with SingleTickerProviderStateMixin {
 
   @override
   Widget build(BuildContext context) {
-    var bookmarkedEventsProvider = Provider.of<BookmarkedEventosProvider>(context);
+    var bookmarkedEventsProvider = Provider.of<BookmarkedEventosProvider>(
+      context,
+    );
     List<Evento> myBookmarkedEvents = bookmarkedEventsProvider.bookmarkedEvents;
+
+    var confirmedEventsProvider = Provider.of<ConfirmedEventosProvider>(
+      context,
+    );
+    List<Evento> myConfirmedEvents = confirmedEventsProvider.confirmedEvents;
 
     return Scaffold(
       appBar: AppBar(
@@ -64,13 +69,13 @@ class _UserState extends State<User> with SingleTickerProviderStateMixin {
         backgroundColor: Colors.blue,
         actions: [
           IconButton(
-            icon: Icon(_isEditing ? Icons.save : Icons.edit), 
+            icon: Icon(_isEditing ? Icons.save : Icons.edit),
             onPressed: _toggleEditMode,
           ),
-          PopupMenuButton<String>( 
+          PopupMenuButton<String>(
             onSelected: (value) {
               if (value == 'logout') {
-                Navigator.pushAndRemoveUntil( 
+                Navigator.pushAndRemoveUntil(
                   context,
                   MaterialPageRoute(builder: (context) => const AuthScreen()),
                   (Route<dynamic> route) => false,
@@ -91,56 +96,65 @@ class _UserState extends State<User> with SingleTickerProviderStateMixin {
                 ),
               ];
             },
-          ), 
+          ),
         ],
       ),
       body: Column(
         children: [
           Padding(
-          padding: const EdgeInsets.all(16.0),
-          child: Column(
-            children: [
-              const CircleAvatar(
-                radius: 50,
-                backgroundColor: Colors.grey,
-                child: Icon(Icons.person, size: 60, color: Colors.white),
-              ),
-              const SizedBox(height: 10),
-              _isEditing
-                  ? TextField(
+            padding: const EdgeInsets.all(16.0),
+            child: Column(
+              children: [
+                const CircleAvatar(
+                  radius: 50,
+                  backgroundColor: Colors.grey,
+                  child: Icon(Icons.person, size: 60, color: Colors.white),
+                ),
+                const SizedBox(height: 10),
+                _isEditing
+                    ? TextField(
                       controller: _nameController,
                       decoration: const InputDecoration(labelText: 'Nome'),
                       textAlign: TextAlign.center,
-                      style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                      style: const TextStyle(
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                      ),
                     )
-                  : Text(
+                    : Text(
                       _userName,
-                      style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                      style: const TextStyle(
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
-              _isEditing
-                  ? TextField(
+                _isEditing
+                    ? TextField(
                       controller: _emailController,
                       decoration: const InputDecoration(labelText: 'Email'),
                       textAlign: TextAlign.center,
                       style: TextStyle(fontSize: 16, color: Colors.grey[600]),
                       keyboardType: TextInputType.emailAddress,
                     )
-                  : Text(
+                    : Text(
                       _userEmail,
                       style: TextStyle(fontSize: 16, color: Colors.grey[600]),
                     ),
-            ],
+              ],
+            ),
           ),
-        ),
-          const Divider(), 
+          const Divider(),
           TabBar(
             controller: _tabController,
-            labelColor: Colors.blue, 
-            unselectedLabelColor: Colors.grey, 
-            indicatorColor: Colors.blue, 
+            labelColor: Colors.blue,
+            unselectedLabelColor: Colors.grey,
+            indicatorColor: Colors.blue,
             tabs: const [
               Tab(text: 'Eventos Salvos', icon: Icon(Icons.bookmark)),
-              Tab(text: 'Meus Ingressos', icon: Icon(Icons.confirmation_number)),
+              Tab(
+                text: 'Meus Ingressos',
+                icon: Icon(Icons.confirmation_number),
+              ),
             ],
           ),
           Expanded(
@@ -149,39 +163,45 @@ class _UserState extends State<User> with SingleTickerProviderStateMixin {
               children: [
                 myBookmarkedEvents.isEmpty
                     ? const Center(
-                        child: Text(
-                          'Nenhum evento salvo ainda.',
-                          style: TextStyle(fontSize: 16, color: Colors.grey),
-                        ),
-                      )
+                      child: Text(
+                        'Nenhum evento salvo ainda.',
+                        style: TextStyle(fontSize: 16, color: Colors.grey),
+                      ),
+                    )
                     : ListView.builder(
-                        padding: const EdgeInsets.all(8.0),
-                        itemCount: myBookmarkedEvents.length,
-                        itemBuilder: (context, index) {
-                          Evento event = myBookmarkedEvents[index];
-                          return EventoTile(event: event);
-                        },
+                      padding: const EdgeInsets.all(8.0),
+                      itemCount: myBookmarkedEvents.length,
+                      itemBuilder: (context, index) {
+                        Evento event = myBookmarkedEvents[index];
+                        return EventoTile(event: event);
+                      },
+                    ),
+                myConfirmedEvents.isEmpty
+                    ? const Center(
+                      child: Text(
+                        'Você ainda não comprou ingressos.',
+                        style: TextStyle(fontSize: 16, color: Colors.grey),
                       ),
-                  ListView( 
-                    padding: const EdgeInsets.all(16.0),
-                    children: const [
-                      TicketCard(
-                        eventName: 'Mega Show de Rock 2025',
-                        ticketType: 'VIP - Entrada Principal',
-                        date: '15 de Julho',
-                        time: '20:00h',
-                        location: 'Arena Gigante',
-                      ),
-                      SizedBox(height: 16.0), 
-                      TicketCard(
-                        eventName: 'Festival de Cinema Independente',
-                        ticketType: 'Entrada Geral',
-                        date: '20 de Agosto',
-                        time: '18:30h',
-                        location: 'Teatro da Cidade',
-                      ), 
-                    ],
-                  ),
+                    )
+                    : ListView.builder(
+                      padding: const EdgeInsets.all(16.0),
+                      itemCount: myConfirmedEvents.length,
+                      itemBuilder: (context, index) {
+                        Evento event = myConfirmedEvents[index];
+                        return Column(
+                          children: [
+                            TicketCard(
+                              eventName: event.title,
+                              ticketType: 'Entrada Geral',
+                              date: event.startDate,
+                              time: event.startTime,
+                              location: event.location,
+                            ),
+                            const SizedBox(height: 16.0),
+                          ],
+                        );
+                      },
+                    ),
               ],
             ),
           ),
